@@ -1,0 +1,292 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+.logo-title,
+.en-only {
+  font-family: 'Playfair Display', serif;
+}
+
+.em {
+  color: rgba(102, 0, 30, 0.3);
+}
+
+
+/* 레이아웃 스타일링 */
+section {
+  height: 100vh;
+  min-height: 800px;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  display: block;
+}
+
+.block {
+  display: block;
+}
+
+/* 타이틀 */
+.title-wrap {
+  position: relative;
+  height: 100vh;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bg-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.scroll-line {
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 200px;
+  font-weight: 800;
+  color: rgba(100, 0, 50, 0.05);
+}
+
+.scroll-line:nth-child(1) {
+  top: 15%;
+}
+
+.scroll-line:nth-child(2) {
+  top: 33%;
+}
+
+.scroll-line:nth-child(3) {
+  top: 51%;
+}
+
+.scroll-track {
+  display: inline-block;
+  padding-right: 100%;
+  /* 끊김 방지용 */
+}
+
+/* 방향에 따른 애니메이션 */
+.scroll-left .scroll-track {
+  animation: scrollLeft 30s linear infinite;
+}
+
+.scroll-right .scroll-track {
+  animation: scrollRight 30s linear infinite;
+}
+
+/* 딜레이 (선택사항) */
+.delay-0 .scroll-track {
+  animation-delay: 0s;
+}
+
+.delay-1 .scroll-track {
+  animation-delay: 0s;
+}
+
+.delay-2 .scroll-track {
+  animation-delay: 0s;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+
+  /* 절반만 이동해서 무한 반복 */
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/* 로고 텍스트 */
+.logo-title {
+  font-size: 60px;
+  font-weight: 900;
+  color: #66001e;
+  z-index: 10;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.logo-title {
+  font-size: 111px;
+  font-weight: 800;
+  color: #66001e;
+  text-align: center;
+  line-height: 0.8;
+  z-index: 10;
+}
+
+/* 글자크기 */
+.h1 {
+  font-size: 60px;
+}
+
+.h2 {
+  font-size: 50px;
+}
+
+.h3 {
+  font-size: 40px;
+}
+
+.h4 {
+  font-size: 30px;
+}
+
+.h5 {
+  font-size: 20px;
+}
+
+.h6 {
+  font-size: 16px;
+}
+
+.p {
+  font-size: 14px;
+}
+
+/* nav */
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+.sub-nav {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #eee;
+  display: none;
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.sub-nav li a {
+  padding: 8px 16px;
+  color: #333;
+}
+
+.has-sub:hover .sub-nav {
+  display: block;
+}
+
+.admin-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.slick-slide img {
+  transition: width 2s ease;
+}
+
+.slick-slide img:hover {
+  /*! width: 380px !important; */
+  z-index: 10;
+  position: relative;
+}
+
+.scroll-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #121212;
+  /* 필요 시 배경색 */
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 24px;
+  color: rgba(128, 0, 32, 0.2);
+  /* 백그라운드처럼 흐리게 */
+  animation: filmScroll 30s linear infinite;
+}
+
+@keyframes filmScroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.about-text-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  margin-top: 60px;
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+}

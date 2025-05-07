@@ -1,0 +1,171 @@
+/* 모바일 화면에 맞춘 미디어 쿼리 */
+@media only screen and (max-width: 430px) {
+  header {
+    height: 56px;
+    /* 헤더 높이를 좀 더 컴팩트하게 */
+  }
+
+  header nav h1 {
+    width: 50px;
+    /* 로고 크기 고정 */
+    height: 50px;
+    /* 로고 위치 조정 */
+    top: 1px;
+    margin-left: 26.5%;
+  }
+
+  header nav div ul#nav.main-nav {
+    gap: 15px;
+    /* 메뉴 아이템 간격을 좁혀줌 */
+  }
+
+  header nav div ul#nav.main-nav li a {
+    font-size: 14px;
+    /* 폰트 크기 조정 */
+    padding: 8px 0;
+    /* 메뉴 아이템 높이 줄이기 */
+    text-transform: none;
+    /* 대문자화 제거 */
+    display: none;
+  }
+
+  header nav div a.admin-link {
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 10px;
+  }
+
+  section#title.title-wrap h1.logo-title {
+    font-size: 70px;
+    /* 모바일에서는 제목을 더 작게 */
+    transform: translateX(5px);
+  }
+
+  section#title.title-wrap p.logo-title {
+    font-size: 38px;
+    /* 부제목 크기 조정 */
+    transform: translateX(-3px);
+  }
+
+  /* 서브 메뉴(하위 메뉴)가 모바일에서 더욱 깔끔하게 보이도록 설정 */
+  header nav div ul#nav.main-nav li.has-sub:hover .sub-nav {
+    display: block;
+    background-color: #121212;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform: translateX(0);
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  /* 서브 메뉴 아이템 스타일 */
+  header nav div ul#nav.main-nav li.has-sub ul.sub-nav li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    /* 서브 메뉴 아이템에 색상 전환 효과 추가 */
+  }
+
+  header nav div ul#nav.main-nav li.has-sub ul.sub-nav li a:hover {
+    color: #A52A2A;
+    /* 서브 메뉴 호버 색상 변경 */
+  }
+}
+
+/* 모바일 화면에 맞춘 미디어 쿼리 */
+@media only screen and (max-width: 768px) {
+  #artist h2 {
+    font-size: 30px;
+    margin-left: 26px;
+    margin-bottom: 193px;
+    transform: translateY(296%);
+  }
+
+  #artist img {
+    width: 200px;
+    /* 이미지 크기 더 작게 */
+    height: 300px;
+    /* 이미지 높이 줄이기 */
+  }
+
+  #artist .slick {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #artist figure {
+    margin: 19px;
+    /* 모바일에서 간격을 조금 더 좁히기 */
+  }
+
+  #artist img {
+    /*! max-width: 200px; */
+    /* 모바일에서 이미지 최대 너비를 줄임 */
+    transform: translateY(27px);
+  }
+
+  #artist figcaption {
+    font-size: 14px;
+    transform: translateY(-50px);
+  }
+}
+
+@media (max-width: 768px) {
+  .thumbnail-list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .thumbnail-list ul li {
+    width: 100%;
+  }
+
+  .thumbnail {
+    position: relative;
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .thumbnail .overlay,
+  .thumbnail .play-icon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .thumbnail:hover .overlay,
+  .thumbnail:hover .play-icon {
+    opacity: 1;
+  }
+
+  .thumbnail .play-icon {
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+  }
+
+  .thumbnail .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 12px;
+  }
+}

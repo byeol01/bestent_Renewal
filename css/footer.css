@@ -1,0 +1,94 @@
+/* Footer */
+#footer {
+  position: relative;
+  /* 움직이는 배경 텍스트를 위한 설정 */
+  background-color: #121212;
+  color: #EAEAEA;
+  overflow: hidden;
+  /* 배경 텍스트가 넘치지 않게 */
+  border-top: 3px dashed rgb(255, 255, 255);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+footer a {
+
+  color: #EAEAEA;
+}
+
+#footer .footer-background-text {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 100px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.05);
+  animation: scrollText 20s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#footer .inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  /* 배경 텍스트 위에 표시되도록 */
+  z-index: 1;
+}
+
+#footer .company-info {
+  margin-bottom: 20px;
+  transform: translateY(25px);
+}
+
+#footer .company-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#footer .company-info address p {
+  margin: 4px 0;
+}
+
+#footer .sns-links {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+#footer .sns-links a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+#footer .sns-links a:hover img {
+  transform: scale(1.1);
+  /* 약간 커지는 효과 */
+}
+
+#footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #777;
+  position: relative;
+  z-index: 1;
+}

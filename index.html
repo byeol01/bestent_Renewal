@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BESTENT</title>
+
+    <!-- CSS 파일들 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!--  구글 폰트 (Inter + Playfair Display) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery 먼저 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+    <!-- slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- 내 slick 슬라이더 초기화 코드 -->
+    <script>
+        $(document).ready(function () {
+            $('.slick').slick({
+                slidesToShow: 2,     // 몇 개 보일지는 이미지 크기에 따라 달라짐
+                slidesToScroll: 2,
+                variableWidth: true, // 이미지 크기 기준으로 슬라이드 넓이 설정
+                arrows: false,
+                draggable: true,
+                swipe: true,
+                infinite: false
+            });
+        });
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            AOS.init();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 상당영역 -->
+    <header>
+        <nav class="flex wrap en-only">
+            <h1>베스트이엔티로고</h1>
+            <div>
+                <ul id="nav" class="main-nav">
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">ARTIST</a></li>
+                    <li><a href="">MULTIMEDIA</a></li>
+                    <li class="has-sub">
+                        <a href="">PR CENTER</a>
+                        <ul class="sub-nav">
+                            <li><a href="">NOTICE</a></li>
+                            <li><a href="">NEW RELEASE</a></li>
+                            <li><a href="">LATEST NEWS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+                <a class="admin-link" href="">관리자</a>
+            </div>
+        </nav>
+    </header>
+    <!-- 타이틀영역 -->
+    <section id="title" class="title-wrap en-only">
+        <div class="bg-wrap">
+            <div class="scroll-line scroll-left delay-0">
+                <div class="scroll-track">B<span class="em">E</span>STENT <span class="em">E</span>NTE<span
+                        class="em">R</span>TAINM<span class="em">E</span>
+                    <span class="em">N</span>T BESTEN<span class="em">T</span> <span class="em">E</span>NTERT<span
+                        class="em">A</span>INM<span class="em">E</span>NT
+                </div>
+            </div>
+            <div class="scroll-line scroll-right delay-1">
+                <div class="scroll-track">BE<span class="em">S</span>TENT <span class="em">E</span>NTER<span
+                        class="em">T</span>AIN<span class="em">M</span>ENT
+                    B<span class="em">E</span>STENT<span class="em">E</span>NTE<span class="em">R</span>T<span
+                        class="em">A</span>INMEN<span class="em">T</span> </div>
+            </div>
+            <div class="scroll-line scroll-left delay-2">
+                <div class="scroll-track">BEST<span class="em">E</span>NT ENTE<span class="em">R</span>TAIN<span
+                        class="em">M</span>ENT BE<span class="em">S</span>TENT E<span class="em">N</span>TER<span
+                        class="em">T</span>AINMEN<span class="em">T</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="logo-title">BESTENT</h1>
+            <p class="logo-title ">ENTERTAINMENT</p>
+        </div>
+    </section>
+    <main>
+        <!-- about us
+        <section id="about">
+            <div>
+                <h2 class="h2">ABOUT US</h2>
+                <p class="sub-title h4 en-only">What We Do</p>
+                <img src="images/about-logo.png" alt="Bestent Symbol" />
+                <h3 class="h3 en-only">BESTENT</h3>
+                <p class="about-text-box h4 animated-text" data-aos="fade-up" data-aos-duration="1000">
+                    본 동종업계 최고 수준의 전문적인 인력과 체계적인 시스템을 통해서<br>아티스트 매니지먼트, 미디어 콘텐츠 기획/제작(예능/전시,<br>그리고 음원
+                    유통/홍보/제작/마케팅)까지 더하여 전반적인<br>엔터테인먼트의 양질의 서비스를 제공합니다.
+                </p>
+                <p class="highlight h4 impact-text" data-aos="fade-up" data-aos-duration="1500">
+                    소속 아티스트들과 <span class="gradient-text">최상의 솔루션</span>을 제공하는 파트너로 성장해 나갈 것입니다.
+                </p>
+            </div>
+        </section> -->
+        <!-- artist -->
+        <section id="artist">
+            <h2>BESTENT <br>ARTIST</h2>
+            <div class="slick">
+                <figure>
+                    <img src="./img/art.jpg" alt="Artist #">
+                    <figcaption class="en-only"><strong>LEE YEE UN</strong></figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/art2.png" alt="Artist #" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="3000" data-aos-offset="200">
+                    <figcaption class="en-only"><strong>WH3N</strong></figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/art3.jpg" alt="Artist #" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="4000" data-aos-offset="200">
+                    <figcaption class="en-only"><strong>LEE YEE UN</strong></figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/art2.jpg" alt="Artist #" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="5000" data-aos-offset="200">
+                    <figcaption class="en-only"><strong>WH3N</strong></figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/art5.jpg" alt="Artist #" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="6000" data-aos-offset="200">
+                    <figcaption class="en-only"><strong>LEE YEE UN</strong></figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- multimedia -->
+        <section id="multimedia">
+            <div>
+                <h2>MULTIMEDIA</h2>
+                <div class="video-wrap">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <!-- 메인 영상 -->
+                    <div class="main-video" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                        <iframe id="youtube-player" width="700" height="400"
+                            src="https://www.youtube.com/embed/LwZSW4oToV0?enablejsapi=1"
+                            title="이예은 - 아찔하게 #엠카운트다운 EP.870 | Mnet 250109 방송" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- 썸네일 목록 -->
+                    <div class="thumbnail-list">
+                        <ul>
+                            <li data-video-id="9oWp_YwTPEs">
+                                <div class="thumbnail">
+                                    <img src="https://img.youtube.com/vi/9oWp_YwTPEs/maxresdefault.jpg"
+                                        alt="이예은 - 아찔하게 l 트롯챔피언 l EP.56">
+                                    <span class="overlay"></span>
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </li>
+                            <li data-video-id="TkcKyOV5bpo">
+                                <div class="thumbnail">
+                                    <img src="https://img.youtube.com/vi/TkcKyOV5bpo/maxresdefault.jpg" alt="...">
+                                    <span class="overlay"></span>
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </li>
+                            <li data-video-id="shSzZ0i5AyM">
+                                <div class="thumbnail">
+                                    <img src="https://img.youtube.com/vi/shSzZ0i5AyM/maxresdefault.jpg" alt="...">
+                                    <span class="overlay"></span>
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </li>
+                            <li data-video-id="0mmni8AGFhc">
+                                <div class="thumbnail">
+                                    <img src="https://img.youtube.com/vi/0mmni8AGFhc/maxresdefault.jpg"
+                                        alt="이예은, ‘아찔한 출근길’ (@ 뮤직뱅크 1233회 출근길)">
+                                    <span class="overlay"></span>
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pr center -->
+        <section id="pr">
+            <div class="inner">
+                <h2>PR CENTER</h2>
+
+                <!-- Latest News -->
+                <div class="latest-news">
+                    <h3 class="en-only">LATEST NEWS</h3>
+                    <ul class="news-list">
+                        <li>
+                            <img src="./img/art.jpg" alt="기사 썸네일">
+                            <strong>베스트엔터 신인 가수 데뷔 확정</strong>
+                        </li>
+                        <li>
+                            <img src="./img/news3.png" alt="기사 썸네일">
+                            <strong> 단독 콘서트 성황리에 마무리</strong>
+                        </li>
+                        <li>
+                            <img src="./img/news2.png" alt="기사 썸네일">
+                            <strong>글로벌 콘텐츠 제작 MOU 체결</strong>
+                        </li>
+                        <li>
+                            <img src="./img/news1.JPG" alt="기사 썸네일">
+                            <strong>아티스트 B, 패션 브랜드 론칭</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Notice -->
+                <div class="notice">
+                    <h4 class="en-only">NOTICE</h4>
+                    <div class="notice-info">
+                        <span class="en-only">NO.</span>
+                        <span>1</span>
+                        <span class="en-only">NAME</span>
+                        <span>2024.12.05 아찔하게 Coming Soon</span>
+                    </div>
+                </div>
+                <a class="btn en-only" href="/new-release.html">NEW RELEASE</a>
+            </div>
+        </section>
+        <!-- contact us -->
+        <section id="contact">
+            <div class="inner en-only">
+                <h2>CONTACT US</h2>
+                <form class="form">
+                    <div class="group">
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="tel" placeholder="Phone" />
+                    </div>
+                    <div class="group">
+                        <input type="text" placeholder="Subject" />
+                    </div>
+                    <textarea placeholder="Message"></textarea>
+                    <button class="send-btn">send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="scroll-wrapper">
+        <!-- 움직이는 배경 텍스트 -->
+        <div class="footer-background-text scroll-text">
+            <p>BEST ENT · BEST ENT · BEST ENT · BEST ENT · BEST ENT ·</p>
+        </div>
+
+        <div class="inner">
+            <!-- 왼쪽: 회사 정보 -->
+            <div class="company-info">
+                <h3>베스트이엔티</h3>
+                <address>
+                    <p>대표: 고혜승</p>
+                    <p>서울특별시 송파구 송파동 147-5 타워빌딩 B1</p>
+                    <p>Tel: <a href="tel:01068255769">010-6825-5769</a></p>
+                </address>
+            </div>
+            <!-- 오른쪽: SNS 아이콘 -->
+            <div class="sns-links">
+                <a href="https://www.instagram.com/best_ent.official/?igsh=MXJvZXV4Y2IxYzVrag%3D%3D" target="_blank"
+                    aria-label="Instagram">
+                    <img src="./img/instagram.png" alt="Instagram" />
+                </a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="./img/youtube.png" alt="YouTube" />
+                </a>
+                <a href="https://www.tiktok.com/@best.enter?_t=8nSM4X2vUHv&_r=1" target="_blank" aria-label="TikTok">
+                    <img src="./img/tik-tok.png" alt="TikTok" />
+                </a>
+            </div>
+        </div>
+
+        <!-- 저작권 -->
+        <div class="copyright">
+            <p>Copyright ⓒ 베스트이엔티 Co.,Ltd. all rights reserved.</p>
+            <p>아이콘 출처: <a href="https://www.flaticon.com" target="_blank" class="gray">Flaticon</a></p>
+        </div>
+    </footer>
+    <script>
+        let player;
+
+        // YouTube API가 iframe을 생성할 때 호출됨
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                videoId: 'LwZSW4oToV0', // 기본 영상
+                playerVars: {
+                    autoplay: 0,
+                    loop: 1,
+                    playlist: 'LwZSW4oToV0', // loop하려면 playlist에도 videoId를 넣어야 함
+                    controls: 1, // controls를 1로 설정하여 플레이어 제어 버튼을 활성화
+                    modestbranding: 1,
+                    rel: 0
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            const videoBox = document.querySelector('.video-wrap');
+
+            // Intersection Observer로 화면에 보일 때 자동 재생
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        player.playVideo();
+                    } else {
+                        player.pauseVideo();
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+
+            observer.observe(videoBox);
+        }
+
+        // jQuery를 통한 클릭 이벤트 바인딩 (모바일 터치 대응)
+        $(document).ready(function () {
+            // 썸네일 클릭 시 새 영상 로드
+            $(document).on("click", ".thumbnail-list li", function () {
+                let videoId = $(this).data("video-id");
+
+                // 썸네일 활성화 표시 변경
+                $(".thumbnail-list li").removeClass("active");
+                $(this).addClass("active");
+
+                // 새 영상 로드 전에 playlist와 함께 videoId를 전달
+                if (player) {
+                    player.loadVideoById({
+                        videoId: videoId,
+                        playlist: videoId, // playlist에도 videoId 넣어줘야 loop가 제대로 동작
+                        suggestedQuality: 'large' // 고화질로 재생
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

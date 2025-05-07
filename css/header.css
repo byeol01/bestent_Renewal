@@ -1,0 +1,187 @@
+header {
+  background-color: #121212;
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+/* 네비게이션 */
+header nav {}
+
+header nav h1 {
+  font-size: 0;
+  background-image: url(../img/logo.png);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 40px;
+  transform: translateY(3px);
+}
+
+header nav div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+header nav div ul#nav.main-nav {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  padding: 11px 0;
+}
+
+header nav div ul#nav.main-nav li {}
+
+header nav div ul#nav.main-nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav div ul#nav.main-nav li a:hover {
+  color: #A52A2A;
+}
+
+header nav div ul#nav.main-nav li.has-sub {}
+
+header nav div ul#nav.main-nav li.has-sub a {}
+
+header nav div ul#nav.main-nav li.has-sub ul.sub-nav {
+  display: none;
+}
+
+header nav div ul#nav.main-nav li.has-sub:hover .sub-nav {
+  display: block;
+  background-color: #121212;
+  border-radius: 0 0 25px 25px;
+  padding-top: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transform: translateX(-20px);
+  text-align: center;
+}
+
+header nav div ul#nav.main-nav li.has-sub ul.sub-nav li {}
+
+header nav div ul#nav.main-nav li.has-sub ul.sub-nav li a {}
+
+
+header nav div a.admin-link {
+  font-size: 0;
+  background-image: url(../img/svg/setting.svg);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: invert(14%) sepia(100%) saturate(7474%) hue-rotate(325deg) brightness(80%) contrast(100%);
+  position: absolute;
+  top: 13px;
+  right: 51px;
+
+}
+
+/* 타이틀영영 */
+section#title.title-wrap {}
+
+section#title.title-wrap div {}
+
+section#title.title-wrap .bg-text {}
+
+section#title.title-wrap .bg-text:nth-child(1) {}
+
+section#title.title-wrap .bg-text:nth-child(2) {}
+
+section#title.title-wrap .bg-text:nth-child(3) {}
+
+section#title.title-wrap h1.logo-title {
+  transform: translateX(-26%);
+  width: fit-content;
+  font-size: 120px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+section#title.title-wrap p.logo-title {
+  transform: translateX(19%);
+  width: fit-content;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* 모바일 화면에 맞춘 미디어 쿼리 */
+@media only screen and (max-width: 430px) {
+  header {
+    height: 56px;
+    /* 헤더 높이를 좀 더 컴팩트하게 */
+  }
+
+  header nav h1 {
+    width: 50px;
+    /* 로고 크기 고정 */
+    height: 50px;
+    /* 로고 위치 조정 */
+    top: 1px;
+    margin-left: 26.5%;
+  }
+
+  header nav div ul#nav.main-nav {
+    gap: 15px;
+    /* 메뉴 아이템 간격을 좁혀줌 */
+  }
+
+  header nav div ul#nav.main-nav li a {
+    font-size: 14px;
+    /* 폰트 크기 조정 */
+    padding: 8px 0;
+    /* 메뉴 아이템 높이 줄이기 */
+    text-transform: none;
+    /* 대문자화 제거 */
+  }
+
+  header nav div a.admin-link {
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 10px;
+  }
+
+  section#title.title-wrap h1.logo-title {
+    font-size: 70px;
+    /* 모바일에서는 제목을 더 작게 */
+    transform: translateX(5px);
+  }
+
+  section#title.title-wrap p.logo-title {
+    font-size: 38px;
+    /* 부제목 크기 조정 */
+    transform: translateX(-3px);
+  }
+
+  /* 서브 메뉴(하위 메뉴)가 모바일에서 더욱 깔끔하게 보이도록 설정 */
+  header nav div ul#nav.main-nav li.has-sub:hover .sub-nav {
+    display: block;
+    background-color: #121212;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform: translateX(0);
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  /* 서브 메뉴 아이템 스타일 */
+  header nav div ul#nav.main-nav li.has-sub ul.sub-nav li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    /* 서브 메뉴 아이템에 색상 전환 효과 추가 */
+  }
+
+  header nav div ul#nav.main-nav li.has-sub ul.sub-nav li a:hover {
+    color: #A52A2A;
+    /* 서브 메뉴 호버 색상 변경 */
+  }
+}
